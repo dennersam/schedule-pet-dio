@@ -23,4 +23,17 @@ dos Pets, com cadastro simples com nome, nome do dono, telefone e a data.
 
 ![img](imgs/home.png)
 
+### Adicionar
+
+![img](imgs/new.png)
+
+### Fazer Alterações
+
+![img](imgs/update.png)
+
+### Detales
+
+![img](imgs/details.png)
+
+
 
