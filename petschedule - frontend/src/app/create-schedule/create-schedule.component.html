@@ -1,0 +1,30 @@
+<h3>Create Schedule</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="petName">Pet Name</label>
+      <input type="text" class="form-control" id="petName" required [(ngModel)] = "schedule.petName" name="petName">
+    </div>
+
+    <div class="form-group">
+      <label for="petOwner">Pet Owner</label>
+      <input type="text" class="form-control" id="petOwner" required [(ngModel)] = "schedule.petOwner" name="petOwner">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Phone</label>
+      <input type="text" class="form-control" id="phone" required [(ngModel)] = "schedule.phone" name="phone">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Date</label>
+        <input type="date" class="form-control" id="date" required [(ngModel)] = "schedule.date" name="date">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success">Save</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <button class="btn btn-success" (click)="save()">Create</button>
+</div>

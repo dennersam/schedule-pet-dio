@@ -1,0 +1,21 @@
+<h2>Schedule Details</h2>
+
+<hr/>
+<div *ngIf="schedule">
+  <div>
+    <label><b>Pet Name:</b></label>  {{schedule.petName}}
+  </div>
+  <div>
+    <label><b>Pet Owner:</b></label>  {{schedule.petOwner}}
+  </div>
+  <div>
+    <label><b>Phone:</b></label>  {{schedule.phone}}
+  </div>
+    <div>
+    <label><b>Date:</b></label>  {{schedule.date}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to List</button><br>
